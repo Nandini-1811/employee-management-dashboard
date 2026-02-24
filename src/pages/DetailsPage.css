@@ -1,0 +1,138 @@
+.details-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.details-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Hero */
+.hero-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.hero-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.hero-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-role {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* Info grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.info-icon {
+  font-size: 16px;
+  color: var(--primary);
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.info-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.info-val {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Camera */
+.cam-section {
+  padding: 20px;
+}
+
+.cam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cam-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cam-header p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.cam-view {
+  margin-top: 16px;
+}
+
+.cam-video {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+  max-height: 320px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.cam-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

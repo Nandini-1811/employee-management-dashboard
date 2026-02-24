@@ -1,0 +1,133 @@
+.photo-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.photo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header section */
+.photo-hero {
+  padding: 20px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.photo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.photo-hero h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.photo-hero p {
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/* Photo frame */
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.photo-img {
+  width: 100%;
+  display: block;
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.photo-timestamp {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Actions */
+.photo-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.photo-actions .btn {
+  flex: 1;
+  min-width: 120px;
+  justify-content: center;
+}
+
+/* Employee mini card */
+.photo-emp-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.pec-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.pec-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pec-role {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.pec-salary {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--success);
+  font-size: 14px;
+}

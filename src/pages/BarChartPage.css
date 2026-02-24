@@ -1,0 +1,304 @@
+.chart-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.chart-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+.chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.chart-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.chart-header p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+/* Top earner badge */
+.top-earner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 14px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.te-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.te-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.te-amount {
+  font-weight: 600;
+  color: var(--success);
+  font-size: 14px;
+}
+
+/* Chart card */
+.chart-card {
+  padding: 20px 16px 8px;
+}
+
+/* Custom tooltip */
+.chart-tooltip {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+}
+
+.ct-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.ct-salary {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.ct-role {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Salary table */
+.salary-table {
+  overflow: hidden;
+}
+
+.st-head {
+  display: grid;
+  grid-template-columns: 1fr 110px 110px;
+  padding: 12px 18px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.st-row {
+  display: grid;
+  grid-template-columns: 1fr 110px 110px;
+  align-items: center;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.st-row:last-child {
+  border-bottom: none;
+}
+
+.st-row:hover {
+  background: var(--bg);
+}
+
+.st-emp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.st-rank {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.st-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.st-role {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.st-city {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.st-salary {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--success);
+  text-align: right;
+}
+
+/* Filter tabs */
+.perf-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.perf-tab {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  background: #ffffff;
+  color: var(--text);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.perf-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.perf-tab:hover:not(.active) {
+  background: var(--bg);
+  border-color: var(--primary);
+}
+
+/* Top performers */
+.performers-section {
+  padding: 20px;
+}
+
+.perf-header {
+  margin-bottom: 14px;
+}
+
+.perf-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.perf-header p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.perf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perf-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.perf-row:hover {
+  background: var(--bg);
+}
+
+/* Rank */
+.perf-rank {
+  width: 28px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* Avatar */
+.perf-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+/* Info */
+.perf-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.perf-name {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.perf-role {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Salary */
+.perf-salary {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--success);
+  flex-shrink: 0;
+}
+
+/* Arrow */
+.perf-arrow {
+  color: var(--text-muted);
+  font-size: 14px;
+  flex-shrink: 0;
+}
