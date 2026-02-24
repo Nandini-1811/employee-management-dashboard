@@ -2,6 +2,8 @@
 
 A multi-screen React application developed as part of a technical assessment.
 
+[🌐 Live Demo](https://employee-management-dashboard-eta-livid.vercel.app/)
+
 The project demonstrates structured routing, protected views, API integration with graceful fallback handling, camera access using browser APIs, and a clean, responsive user interface suitable for internal business tools.
 
 ---
