@@ -38,7 +38,7 @@ export default function LoginPage() {
         {/* Logo area */}
         <div className="login-logo">
           <i className="fa-solid fa-star logo-icon"></i>
-          <h1>Jotish</h1>
+          <h1>DashBoard</h1>
           <p>Welcome back! Sign in to continue.</p>
         </div>
 
