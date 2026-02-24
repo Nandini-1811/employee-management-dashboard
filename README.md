@@ -6,7 +6,7 @@ A multi-screen React application developed as part of a technical assessment.
 
 # Demo Media
 All important screenshots and an end-to-end screen recording are available here:
-LINK :: https://drive.google.com/drive/folders/16jAPhVqu9WtR8D3w8x9H7Uk79Ty0VSLk?usp=sharing
+[📁 Google Drive Folder](https://drive.google.com/drive/folders/16jAPhVqu9WtR8D3w8x9H7Uk79Ty0VSLk?usp=sharing)
 
 The project demonstrates structured routing, protected views, API integration with graceful fallback handling, camera access using browser APIs, and a clean, responsive user interface suitable for internal business tools.
 
