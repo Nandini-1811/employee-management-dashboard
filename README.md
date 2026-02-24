@@ -89,7 +89,7 @@ http://localhost:3000
 ```
 
 ## Project Structure
-
+```
 src/
 ├── api.js              API integration + mock fallback
 ├── App.js              Router configuration + auth guard
@@ -102,4 +102,4 @@ src/
     ├── DetailsPage.js
     ├── PhotoResultPage.js
     └── BarChartPage.js
-
+```
